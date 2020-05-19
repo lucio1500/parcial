@@ -448,7 +448,7 @@ void mostrarMascotasPorTipoParticular(mascota listadoMascota[], int sizeMascota,
             printf ("ID\t\tNOMBRE\t\t\tTIPO\t\t\tRAZA\t\tPESO\t\tEDAD\t\t   SEXO               CLIENTE\n");
             for(i=0; i<sizeMascota; i++)
             {
-                if(listadoMascota[i].estado==OCUPADO&&strcmp(listadoMascota[i].tipo,"Perro")==0)
+                if(listadoMascota[i].estado==OCUPADO&&stricmp(listadoMascota[i].tipo,"Perro")==0)
                 {
                     mostrarMascota(listadoMascota[i],listadoCliente,sizeCliente);
                 }
@@ -459,7 +459,7 @@ void mostrarMascotasPorTipoParticular(mascota listadoMascota[], int sizeMascota,
             printf ("ID\t\tNOMBRE\t\t\tTIPO\t\t\tRAZA\t\tPESO\t\tEDAD\t\t   SEXO               CLIENTE\n");
             for(i=0; i<sizeMascota; i++)
             {
-                if(listadoMascota[i].estado==OCUPADO&&strcmp(listadoMascota[i].tipo,"Gato")==0)
+                if(listadoMascota[i].estado==OCUPADO&&stricmp(listadoMascota[i].tipo,"Gato")==0)
                 {
                     mostrarMascota(listadoMascota[i],listadoCliente,sizeCliente);
                 }
@@ -470,7 +470,7 @@ void mostrarMascotasPorTipoParticular(mascota listadoMascota[], int sizeMascota,
             printf ("ID\t\tNOMBRE\t\t\tTIPO\t\t\tRAZA\t\tPESO\t\tEDAD\t\t   SEXO               CLIENTE\n");
             for(i=0; i<sizeMascota; i++)
             {
-                if(listadoMascota[i].estado==OCUPADO&&strcmp(listadoMascota[i].tipo,"Raro")==0)
+                if(listadoMascota[i].estado==OCUPADO&&stricmp(listadoMascota[i].tipo,"Raro")==0)
                 {
                     mostrarMascota(listadoMascota[i],listadoCliente,sizeCliente);
                 }
