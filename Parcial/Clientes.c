@@ -269,75 +269,79 @@ int modificarCliente(cliente listadoCliente[], int sizeCliente, int id)
     {
     showModificarCliente();
     opcion=getInt(opcion,"Elija una opcion: ","Incorrecto, Ingrese el numero de la opcion que desea: ",1,7);
-        switch(opcion)
-        {
-        case 1:
-            for(i=0; i<sizeCliente;i++)
+            switch(opcion)
             {
-                if(id == listadoCliente[i].id)
+            case 1:
+                for(i=0; i<sizeCliente;i++)
                 {
-                getStringOfLetters(listadoCliente[i].nombre,"Ingrese nombre: ","Error Reingrese un nombre valido: ");
-                flag=0;
-                break;
+                    if(id == listadoCliente[i].id)
+                    {
+                    getStringOfLetters(listadoCliente[i].nombre,"Ingrese nombre: ","Error Reingrese un nombre valido: ");
+                    flag=0;
+                    break;
+                    }
                 }
-            }
-        break;
-        case 2:
-            for(i=0; i<sizeCliente;i++)
-            {
-                if(id == listadoCliente[i].id)
+            break;
+            case 2:
+                for(i=0; i<sizeCliente;i++)
                 {
-                getStringOfLetters(listadoCliente[i].apellido,"Ingrese apellido: ","Error Reingrese un apellido valido: ");
-                flag=0;
-                break;
+                    if(id == listadoCliente[i].id)
+                    {
+                    getStringOfLetters(listadoCliente[i].apellido,"Ingrese apellido: ","Error Reingrese un apellido valido: ");
+                    flag=0;
+                    break;
+                    }
                 }
-            }
-        break;
-        case 3:
-            for(i=0; i<sizeCliente;i++)
-            {
-                if(id == listadoCliente[i].id)
+            break;
+            case 3:
+                for(i=0; i<sizeCliente;i++)
                 {
-                getStringOfLetters(listadoCliente[i].localidad,"Ingrese localidad: ","Error: ");
-                flag=0;
-                break;
+                    if(id == listadoCliente[i].id)
+                    {
+                    getStringOfLetters(listadoCliente[i].localidad,"Ingrese localidad: ","Error: ");
+                    flag=0;
+                    break;
+                    }
                 }
-            }
-        break;
-        case 4:
-            for(i=0; i<sizeCliente;i++)
-            {
-                if(id == listadoCliente[i].id)
+            break;
+            case 4:
+                for(i=0; i<sizeCliente;i++)
                 {
-                listadoCliente[i].telefono=getInt(listadoCliente[i].telefono,"Ingrese telefono","Error Reingrese telefono: ",1000,1000000);
-                flag=0;
-                break;
+                    if(id == listadoCliente[i].id)
+                    {
+                    listadoCliente[i].telefono=getInt(listadoCliente[i].telefono,"Ingrese telefono","Error Reingrese telefono: ",1000,1000000);
+                    flag=0;
+                    break;
+                    }
                 }
-            }
-        break;
-        case 5:
-            for(i=0; i<sizeCliente;i++)
-            {
-                if(id == listadoCliente[i].id)
+            break;
+            case 5:
+                for(i=0; i<sizeCliente;i++)
                 {
-                listadoCliente[i].edad=getInt(listadoCliente[i].edad,"Ingrese edad","Error Reingrese edad: ",1,100);
-                flag=0;
-                break;
+                    if(id == listadoCliente[i].id)
+                    {
+                    listadoCliente[i].edad=getInt(listadoCliente[i].edad,"Ingrese edad","Error Reingrese edad: ",1,100);
+                    flag=0;
+                    break;
+                    }
                 }
-            }
-        break;
-        case 6:
-            for(i=0; i<sizeCliente;i++)
-            {
-                if(id == listadoCliente[i].id)
+            break;
+            case 6:
+                for(i=0; i<sizeCliente;i++)
                 {
-                getStringOfLetters(listadoCliente[i].sexo,"Ingrese sexo: ","Error Reingrese un sexo valido: ");
-                flag=0;
-                break;
+                    if(id == listadoCliente[i].id)
+                    {
+                    getSexo(listadoCliente[i].sexo,"Ingrese sexo: ","Error Reingrese un sexo valido: ");
+                    flag=0;
+                    break;
+                    }
                 }
-            }
-        break;
-    }
+            break;
+        }
+
+    system("pause");
+    system("cls");
+
     }while(opcion!=7);
 
     return flag;

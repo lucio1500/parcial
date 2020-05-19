@@ -302,6 +302,9 @@ int main()
                 case 18:
                     promedioSexo(listadoCliente,TC);
                 break;
+                case 19:
+                    mostrarTodosLosClientesConMascotasDelMismoS(listadoMascota,TM,listadoCliente,TC);
+                break;
 
             }
 

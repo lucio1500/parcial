@@ -33,3 +33,5 @@ void ordenarCantidadMascotas(int sizeCliente,cliente listadoCliente[], Cliente_M
 void ordenarClientesPorCantidadDeMascotas(mascota listadoMascota[], int sizeMascota, cliente listadoCliente[], int sizeCliente);
 
 void clientesConMasDeUnaMascota(mascota listadoMascota[], int sizeMascota, cliente listadoCliente[], int sizeCliente);
+
+void mostrarTodosLosClientesConMascotasDelMismoS(mascota listadoMascota[], int sizeMascota, cliente listadoCliente[], int sizeCliente);

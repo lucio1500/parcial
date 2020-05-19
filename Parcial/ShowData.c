@@ -83,10 +83,7 @@ void showModificarCliente(void)
         printf("4.Telefono\n");
         printf("5.Edad\n");
         printf("6.Sexo\n");
-        printf("7.\n");
-        printf("8.\n");
-        printf("9.\n");
-        printf("10.SALIR\n");
+        printf("7.SALIR\n");
 
 }
 

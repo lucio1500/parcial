@@ -75,7 +75,7 @@
 
 1589147193 c:\users\lucio\desktop\parcial\parcial\validations.h
 
-1589850862 source:c:\users\lucio\desktop\parcial\parcial\showdata.c
+1589891738 source:c:\users\lucio\desktop\parcial\parcial\showdata.c
 
 1589237612 source:c:\users\lucio\desktop\parcial\parcial\validations.c
 	<stdio.h>
@@ -84,7 +84,7 @@
 	"Inputs.h"
 	"Validations.h"
 
-1589890687 source:c:\users\lucio\desktop\parcial\parcial\main.c
+1589892164 source:c:\users\lucio\desktop\parcial\parcial\main.c
 	<conio.h>
 	<stdio.h>
 	<stdlib.h>
@@ -96,7 +96,7 @@
 
 1589850862 c:\users\lucio\desktop\parcial\parcial\showdata.h
 
-1589889815 c:\users\lucio\desktop\parcial\parcial\cliente_mascota.h
+1589892164 c:\users\lucio\desktop\parcial\parcial\cliente_mascota.h
 	"Mascotas.h"
 	"Clientes.h"
 	"Raza.h"
@@ -105,7 +105,7 @@
 
 1589847116 c:\users\lucio\desktop\parcial\parcial\clientes.h
 
-1589890779 source:c:\users\lucio\desktop\parcial\parcial\cliente_mascota.c
+1589894239 source:c:\users\lucio\desktop\parcial\parcial\cliente_mascota.c
 	<conio.h>
 	<stdio.h>
 	<stdlib.h>
@@ -115,7 +115,7 @@
 	"ShowData.h"
 	"Cliente_Mascota.h"
 
-1589889051 source:c:\users\lucio\desktop\parcial\parcial\clientes.c
+1589891800 source:c:\users\lucio\desktop\parcial\parcial\clientes.c
 	<conio.h>
 	<stdio.h>
 	<stdlib.h>
@@ -126,7 +126,7 @@
 	"Clientes.h"
 	"Mascotas.h"
 
-1589889547 source:c:\users\lucio\desktop\parcial\parcial\mascotas.c
+1589891134 source:c:\users\lucio\desktop\parcial\parcial\mascotas.c
 	<conio.h>
 	<stdio.h>
 	<stdlib.h>
