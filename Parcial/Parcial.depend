@@ -1,0 +1,251 @@
+# depslib dependency file v1.0
+1589147193 source:c:\users\lucio\desktop\parcial\validations.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Inputs.h"
+	"Validations.h"
+
+1589222790 c:\users\lucio\desktop\parcial\inputs.h
+
+1589147193 c:\users\lucio\desktop\parcial\validations.h
+
+1589234386 source:c:\users\lucio\desktop\parcial\inputs.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Inputs.h"
+	"Validations.h"
+
+1589231090 source:c:\users\lucio\desktop\parcial\showdata.c
+
+1589233837 source:c:\users\lucio\desktop\parcial\estructura.c
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Inputs.h"
+	"Validations.h"
+	"ShowData.h"
+	"Estructura.h"
+	"Estructura2.h"
+
+1589230303 c:\users\lucio\desktop\parcial\showdata.h
+
+1589233837 c:\users\lucio\desktop\parcial\estructura.h
+
+1589234454 source:c:\users\lucio\desktop\parcial\estructura2.c
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Inputs.h"
+	"Validations.h"
+	"ShowData.h"
+	"Estructura.h"
+	"Estructura2.h"
+
+1589234285 c:\users\lucio\desktop\parcial\estructura2.h
+
+1589234130 source:c:\users\lucio\desktop\parcial\main.c
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Inputs.h"
+	"Validations.h"
+	"ShowData.h"
+	"Estructura_EstructuraB.h"
+
+1589235842 c:\users\lucio\desktop\parcial\estructura_estructurab.h
+	"Estructura.h"
+	"Estructura2.h"
+
+1589233977 source:c:\users\lucio\desktop\parcial\estructura_estructurab.c
+	"Estructura_EstructuraB.h"
+
+1589847514 source:c:\users\lucio\desktop\parcial\parcial\inputs.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Inputs.h"
+	"Validations.h"
+
+1589847514 c:\users\lucio\desktop\parcial\parcial\inputs.h
+
+1589147193 c:\users\lucio\desktop\parcial\parcial\validations.h
+
+1589850862 source:c:\users\lucio\desktop\parcial\parcial\showdata.c
+
+1589237612 source:c:\users\lucio\desktop\parcial\parcial\validations.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Inputs.h"
+	"Validations.h"
+
+1589890687 source:c:\users\lucio\desktop\parcial\parcial\main.c
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Inputs.h"
+	"Validations.h"
+	"ShowData.h"
+	"Cliente_Mascota.h"
+
+1589850862 c:\users\lucio\desktop\parcial\parcial\showdata.h
+
+1589889815 c:\users\lucio\desktop\parcial\parcial\cliente_mascota.h
+	"Mascotas.h"
+	"Clientes.h"
+	"Raza.h"
+
+1589889051 c:\users\lucio\desktop\parcial\parcial\mascotas.h
+
+1589847116 c:\users\lucio\desktop\parcial\parcial\clientes.h
+
+1589890779 source:c:\users\lucio\desktop\parcial\parcial\cliente_mascota.c
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Inputs.h"
+	"Validations.h"
+	"ShowData.h"
+	"Cliente_Mascota.h"
+
+1589889051 source:c:\users\lucio\desktop\parcial\parcial\clientes.c
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Inputs.h"
+	"Validations.h"
+	"ShowData.h"
+	"Clientes.h"
+	"Mascotas.h"
+
+1589889547 source:c:\users\lucio\desktop\parcial\parcial\mascotas.c
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Inputs.h"
+	"Validations.h"
+	"ShowData.h"
+	"Clientes.h"
+	"Mascotas.h"
+
+1589847514 source:c:\users\lucio\desktop\2020 facultad\programacion\parcial\parcial\inputs.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Inputs.h"
+	"Validations.h"
+
+1589847514 c:\users\lucio\desktop\2020 facultad\programacion\parcial\parcial\inputs.h
+
+1589147193 c:\users\lucio\desktop\2020 facultad\programacion\parcial\parcial\validations.h
+
+1589852791 source:c:\users\lucio\desktop\2020 facultad\programacion\parcial\parcial\main.c
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Inputs.h"
+	"Validations.h"
+	"ShowData.h"
+	"Cliente_Mascota.h"
+
+1589850862 c:\users\lucio\desktop\2020 facultad\programacion\parcial\parcial\showdata.h
+
+1589851542 c:\users\lucio\desktop\2020 facultad\programacion\parcial\parcial\cliente_mascota.h
+	"Mascotas.h"
+	"Clientes.h"
+
+1589572983 c:\users\lucio\desktop\2020 facultad\programacion\parcial\parcial\mascotas.h
+
+1589847116 c:\users\lucio\desktop\2020 facultad\programacion\parcial\parcial\clientes.h
+
+1589850862 source:c:\users\lucio\desktop\2020 facultad\programacion\parcial\parcial\showdata.c
+
+1589237612 source:c:\users\lucio\desktop\2020 facultad\programacion\parcial\parcial\validations.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Inputs.h"
+	"Validations.h"
+
+1589853767 source:c:\users\lucio\desktop\2020 facultad\programacion\parcial\parcial\cliente_mascota.c
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Inputs.h"
+	"Validations.h"
+	"ShowData.h"
+	"Cliente_Mascota.h"
+
+1589754393 source:c:\users\lucio\desktop\2020 facultad\programacion\parcial\parcial\mascotas.c
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Inputs.h"
+	"Validations.h"
+	"ShowData.h"
+	"Clientes.h"
+	"Mascotas.h"
+
+1589754109 source:c:\users\lucio\desktop\2020 facultad\programacion\parcial\parcial\tipo.c
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Inputs.h"
+	"Validations.h"
+	"ShowData.h"
+	"Clientes.h"
+	"Mascotas.h"
+	"Tipo.h"
+
+1589754109 c:\users\lucio\desktop\2020 facultad\programacion\parcial\parcial\tipo.h
+
+1589847116 source:c:\users\lucio\desktop\2020 facultad\programacion\parcial\parcial\clientes.c
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Inputs.h"
+	"Validations.h"
+	"ShowData.h"
+	"Clientes.h"
+	"Mascotas.h"
+
+1589754109 source:c:\users\lucio\desktop\parcial\parcial\tipo.c
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Inputs.h"
+	"Validations.h"
+	"ShowData.h"
+	"Clientes.h"
+	"Mascotas.h"
+	"Tipo.h"
+
+1589754109 c:\users\lucio\desktop\parcial\parcial\tipo.h
+
+1589890103 c:\users\lucio\desktop\parcial\parcial\raza.h
+
+1589890873 source:c:\users\lucio\desktop\parcial\parcial\raza.c
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Inputs.h"
+	"Validations.h"
+	"ShowData.h"
+	"Raza.h"
+
