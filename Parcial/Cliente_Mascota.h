@@ -8,7 +8,7 @@ typedef struct
  int idCliente;
 }Cliente_Mascotas;
 
-
+int verificarEliminacionCliente(mascota listadoMascota[], int sizeMascota, cliente listadoCliente[], int sizeCliente,int idCliente);
 int eliminarClienteConSusMascotas(mascota listadoMascota[], int sizeMascota, cliente listadoCliente[], int sizeCliente,int idCliente);
 int cargarMascota(mascota listadoMascota[],int sizeMascota,int index,cliente listadoCliente[],int sizeCliente,int idMascota,eRaza listadoRaza[],int sizeRaza);
 mascota crearMascota(cliente listadoCliente[],int sizeCliente,int idMascota,eRaza listadoRaza[],int sizeRaza);
@@ -21,7 +21,7 @@ void cantidadMascotas(mascota listadoMascota[], int sizeMascota,int sizeCliente,
 void mostrarMascota (mascota miMascota,cliente listadoCliente[],int sizeMascota);
 void mostrarTodasLasMascotas(mascota listadoMascota[], int sizeMascota,cliente listadoCliente[],int sizeCliente);
 
-int modificarMascota(mascota listadoMascota[], int sizeMascota, int id,eRaza listadoRaza[],int sizeRaza);
+int modificarMascota(mascota listadoMascota[], int sizeMascota, int id,eRaza listadoRaza[],int sizeRaza,cliente listadoCliente[],int sizeCliente);
 
 void mostrarMascotasConMasDeTresAnos(mascota listadoMascota[], int sizeMascota,cliente listadoCliente[],int sizeCliente);
 void mostrarMascotasPorTipoParticular(mascota listadoMascota[], int sizeMascota,cliente listadoCliente[],int sizeCliente);

@@ -20,6 +20,7 @@ int main()
     int index;
     int idMascota=510;
     int idCliente=1004;
+    int idRaza=0;
     float promedioEdadMascotas=0;
     float promedioEdadMascotasPorTipo=0;
 
@@ -36,11 +37,11 @@ int main()
 
     flagOpcion=20;
 
-    mostrarTodosLosClientes(listadoCliente,TC);
+    //mostrarTodosLosClientes(listadoCliente,TC);
 
-    mostrarTodasLasMascotas(listadoMascota,TM,listadoCliente,TC);
+    //mostrarTodasLasMascotas(listadoMascota,TM,listadoCliente,TC);
 
-    mostrarTodosLosClientesConMascotas(listadoMascota,TM,listadoCliente,TC);
+    //mostrarTodosLosClientesConMascotas(listadoMascota,TM,listadoCliente,TC);
 
         do
         {
@@ -73,9 +74,7 @@ int main()
                 case 2:
                     if(flagOpcion>0)
                     {
-                    mostrarTodosLosClientes(listadoCliente,TC);
-                    idCliente=validarIdCliente(listadoCliente,TC,"Ingrese el numero de id de la cliente que desea eliminar", "Error id ingresada no valida, reingrese");
-                    r=eliminarClienteConSusMascotas(listadoMascota,TM,listadoCliente,TC,idCliente);
+                    r=verificarEliminacionCliente(listadoMascota,TM,listadoCliente,TC,idCliente);
                             if(r==-1)
                             {
                             printf("\nError en la baja.\n");
@@ -168,7 +167,7 @@ int main()
                     {
                     mostrarTodasLasMascotas(listadoMascota,TM,listadoCliente,TC);
                     idMascota=validarIdMascota(listadoMascota,TM,"Ingrese el numero de id de la mascota que desea modificar: ", "Error id ingresada no valida, reingrese: ");
-                    r=modificarMascota(listadoMascota,TM,idMascota,listadoRaza,TR);
+                    r=modificarMascota(listadoMascota,TM,idMascota,listadoRaza,TR,listadoCliente,TC);
                             if(r==-1)
                             {
                             printf("\nError en la Modificacion.\n");
@@ -303,7 +302,9 @@ int main()
                     promedioSexo(listadoCliente,TC);
                 break;
                 case 19:
-                    mostrarTodosLosClientesConMascotasDelMismoS(listadoMascota,TM,listadoCliente,TC);
+                    mostrarTodasLasRazas(listadoRaza,TR);
+                    idRaza=validarIdRaza(listadoRaza,TR,"Ingrese id de la raza que desee modificar: ","Error, reingrese id: ");
+                    modificarRaza(listadoRaza,TR,idRaza);
                 break;
 
             }

@@ -34,6 +34,54 @@ void hardCodearRaza(eRaza listadoRaza[], int sizeRaza)
 }
 
 
+void modificarRaza(eRaza listadoRaza[], int sizeRaza,int id)
+{
+    int opcion;
+    int i;
+
+    do
+    {
+    showModificarRaza();
+    opcion=getInt(opcion,"Elija una opcion: ","Incorrecto, Ingrese el numero de la opcion que desea: ",1,4);
+            switch(opcion)
+            {
+            case 1:
+                for(i=0; i<sizeRaza;i++)
+                {
+                    if(id == listadoRaza[i].id)
+                    {
+                    getStringOfLetters(listadoRaza[i].nombre,"Ingrese nombre: ","Error Reingrese un nombre valido: ");
+                    break;
+                    }
+                }
+            break;
+            case 2:
+                for(i=0; i<sizeRaza;i++)
+                {
+                    if(id == listadoRaza[i].id)
+                    {
+                    getStringOfLetters(listadoRaza[i].pais,"Ingrese pais: ","Error Reingrese un pais valido: ");
+                    break;
+                    }
+                }
+            break;
+            case 3:
+                for(i=0; i<sizeRaza;i++)
+                {
+                    if(id == listadoRaza[i].id)
+                    {
+                    getStringOfLetters(listadoRaza[i].tipo,"Ingrese tipo (perro,gato,raro): ","Error, reingrese tipo: ");
+                    break;
+                    }
+                }
+            break;
+        }
+
+    system("pause");
+
+    }while(opcion!=4);
+}
+
 int getRaza(int idRaza,eRaza listadoRaza[],int sizeRaza,char tipoM[])
 {
     int i;
@@ -83,6 +131,25 @@ void mostrarRazaPorTipo(eRaza listadoRaza[], int sizeRaza,char tipo[])
         {
             mostrarRaza(listadoRaza[i]);
         }
+    }
+}
+
+/** \brief Muestra todos los datos cargados en un array de tipo eTipo.
+ *
+ * \param listadoTipo[] eTipo
+ * \param sizeRaza int
+ * \return void
+ *
+ */
+void mostrarTodasLasRazas(eRaza listadoRaza[], int sizeRaza)
+{
+    int i;
+
+    printf("\n\n            RAZAS\n\n");
+    printf ("ID\t\tNOMBRE\t\tPAIS\n");
+    for(i=0; i<sizeRaza; i++)
+    {
+        mostrarRaza(listadoRaza[i]);
     }
 }
 

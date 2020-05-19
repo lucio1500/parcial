@@ -8,6 +8,42 @@
 #include "Cliente_Mascota.h"
 
 
+/** \brief Permite volver atras en caso de haber elegido la opcion no deseada.
+ *
+ * \param listadoMascota[] mascota
+ * \param sizeMascota int
+ * \param listadoCliente[] cliente
+ * \param sizeCliente int
+ * \param idCliente int
+ * \return int int Devuelve 0 si esta todo ok o, -1 si hubo algun error.
+ *
+ */
+int verificarEliminacionCliente(mascota listadoMascota[], int sizeMascota, cliente listadoCliente[], int sizeCliente,int idCliente)
+{
+    int r;
+    int option;
+
+    system("cls");
+
+    do
+    {
+    showMenuVerificar();
+    option=getInt(option,"Ingrese la opcion que desee: ","Error,opcion invalida reingrese: ",1,2);
+        if(option==1)
+        {
+        mostrarTodosLosClientes(listadoCliente,sizeCliente);
+        idCliente=validarIdCliente(listadoCliente,sizeCliente,"Ingrese el numero de id de la cliente que desea eliminar", "Error id ingresada no valida, reingrese");
+        r=eliminarClienteConSusMascotas(listadoMascota,sizeMascota,listadoCliente,sizeCliente,idCliente);
+            if(r==-1||r==0)
+            {
+            break;
+            }
+        }
+     }while(option!=2);
+
+     return r;
+}
+
 /** \brief Permite eliminar de manera logica un cliente con sus respectivas mascotas.
  *
  * \param listadoMascota[] mascota
@@ -549,7 +585,7 @@ int cargarMascota(mascota listadoMascota[],int sizeMascota,int index,cliente lis
  * \return int (0) si esta todo ok o (-1) si hubo algun error.
  *
  */
-int modificarMascota(mascota listadoMascota[], int sizeMascota, int id,eRaza listadoRaza[],int sizeRaza)
+int modificarMascota(mascota listadoMascota[], int sizeMascota, int id,eRaza listadoRaza[],int sizeRaza,cliente listadoCliente[],int sizeCliente)
 {
     int flag=-1;
     int opcion;
@@ -558,7 +594,7 @@ int modificarMascota(mascota listadoMascota[], int sizeMascota, int id,eRaza lis
     do
     {
     showModificarMascota();
-    opcion=getInt(opcion,"Elija una opcion: ","Incorrecto, Ingrese el numero de la opcion que desea: ",1,7);
+    opcion=getInt(opcion,"Elija una opcion: ","Incorrecto, Ingrese el numero de la opcion que desea: ",1,8);
         switch(opcion)
         {
         case 1:
@@ -627,8 +663,20 @@ int modificarMascota(mascota listadoMascota[], int sizeMascota, int id,eRaza lis
                 }
             }
         break;
+        case 7:
+            for(i=0; i<sizeMascota;i++)
+            {
+                if(id == listadoMascota[i].id)
+                {
+                mostrarTodosLosClientes(listadoCliente,sizeCliente);
+                listadoMascota[i].idCliente=getInt(listadoMascota[i].idCliente,"Ingrese la id del dueño de la mascota: ","Error, reingrese id del dueño: ",1000,1010);
+                flag=0;
+                break;
+                }
+            }
+        break;
     }
-    }while(opcion!=7);
+    }while(opcion!=8);
 
     return flag;
 }

@@ -12,6 +12,8 @@ typedef struct
 
 void hardCodearRaza(eRaza listadoRaza[], int sizeRaza);
 int getRaza(int idRaza,eRaza listadoRaza[],int sizeRaza,char tipoM[]);
+void modificarRaza(eRaza listadoRaza[], int sizeRaza,int id);
+void mostrarTodasLasRazas(eRaza listadoRaza[], int sizeRaza);
 void mostrarRaza(eRaza miRaza);
 void mostrarRazaPorTipo(eRaza listadoRaza[], int sizeRaza,char tipo[]);
 int validarIdRaza(eRaza listadoRaza[],int sizeRaza,char mensaje[], char mensajeError []);
